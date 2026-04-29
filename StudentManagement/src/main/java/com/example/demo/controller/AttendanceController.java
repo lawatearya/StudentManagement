@@ -15,7 +15,7 @@ public class AttendanceController {
 	@Autowired
 	private AttendanceService attendanceService;
 
-	@PostMapping("/user/markattendance")
+	@PostMapping("/user/markttendance")
 	public ResponseEntity<String> markAttendance(@RequestBody QrTokenDto dto) {
 		return new ResponseEntity(attendanceService.markAttendance(dto),HttpStatus.OK);
 	}
