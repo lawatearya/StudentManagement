@@ -20,7 +20,7 @@ public class AdminController {
 	@Autowired
 	UsersService service;
 	
-	@GetMapping("hit")
+	@GetMapping("hitt")
 	ResponseEntity<String> admin() {
 		return new ResponseEntity<String>("LOGGED IN AS ADMIN", HttpStatus.OK);
 	}
